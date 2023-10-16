@@ -1,0 +1,82 @@
+# Bash Script Tutorial 
+
+https://www.youtube.com/watch?v=e7BufAVwDiM
+
+########################
+
+1. Creating a basich bash Script
+
+a. Create a new file: touch helloScript.sh.
+    where: sh is a suffix that you need to provide for execution.
+b. Open helloScript.sh
+c. Write your first script:
+
+    #! /bin/bash <--- this indicates what shell script we are going to use.
+
+    echo "Hello bash script"  <--- display basic message
+
+d. Convert to executable your file:
+    chmod +x helloScript.sh
+e. Execute your script:
+    ./helloScript.sh
+
+########################
+
+2. Redirect file
+
+For this example, we are going to use the same file created previously
+
+a. Redirecting the output to a file.txt
+
+    #! /bin/bash
+    echo "Hello bash script" >> file.txt
+
+########################
+
+3. Comments
+
+We use # to create a new comment
+
+a. 
+    #! /bin/bash
+
+    # Send output message to file.txt
+    echo "Hello bash script" >> file.txt
+
+b. Multiline comment: 
+    We use : ' '
+
+    : '
+    All this section has
+    been commented 
+    only using the ": ' "
+    we close the multiline comment with an 
+    '
+
+    #! /bin/bash
+
+    : '
+    Multiline comment
+    practice
+    '   
+
+    echo "Hello bash script" > file.txt
+
+########################
+
+4. Dot delimitter:
+We can create a delimiter using a specific word and <<
+
+a. #! /bin/bash
+
+    cat << myDelimiter
+    Here writing some text
+    and closing my delimiter now
+    myDelimiter
+
+
+########################
+
+5. if statement
+
+########################
